@@ -14,8 +14,10 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.JoinColumns;
+import javax.persistence.ManyToMany;
 import javax.persistence.OneToMany;
 import javax.persistence.OneToOne;
+import javax.persistence.JoinTable;
 
 /**
  *
@@ -38,10 +40,12 @@ public class Util implements Serializable {
     @OneToMany(mappedBy = "util")
     private List<Commentaire> commentaires = new ArrayList<>();
 
-    @OneToMany(mappedBy = "utilexpediteur")
+    @ManyToMany
+    @JoinTable(name = "utilmessagesEnvoyes")
     private List<Message> messagesEnvoyes = new ArrayList<>();
     
-    @OneToMany(mappedBy = "utildestinataire")
+    @ManyToMany
+    @JoinTable(name = "utilmessagesRecus")
     private List<Message> messagesRecus = new ArrayList<>();
     
     @OneToOne(mappedBy = "util")

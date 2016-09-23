@@ -4043,9 +4043,9 @@
 									"showShadow": true,
 									"containerChangeable": false,
 									"containerExtending": false,
-									"left": 243,
+									"left": 240,
 									"top": 551,
-									"width": 65.0380859375,
+									"width": 71.5380859375,
 									"height": 13,
 									"autoResize": false,
 									"alpha": 0.9608965367153415,
@@ -4055,7 +4055,7 @@
 									},
 									"edgePosition": 2,
 									"underline": false,
-									"text": "-expediteur",
+									"text": "-expediteurs",
 									"horizontalAlignment": 2,
 									"verticalAlignment": 5
 								},
@@ -5161,7 +5161,7 @@
 								},
 								"visibility": "private",
 								"navigable": true,
-								"aggregation": "none",
+								"aggregation": "composite",
 								"isReadOnly": false,
 								"isOrdered": false,
 								"isUnique": false,
@@ -5211,13 +5211,13 @@
 								"_parent": {
 									"$ref": "AAAAAAFXUhchR5fX6oU="
 								},
-								"name": "expediteur",
+								"name": "expediteurs",
 								"reference": {
 									"$ref": "AAAAAAFXUgx8CZFhbp4="
 								},
 								"visibility": "private",
 								"navigable": true,
-								"aggregation": "none",
+								"aggregation": "composite",
 								"isReadOnly": false,
 								"isOrdered": false,
 								"isUnique": false,
