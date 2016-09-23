@@ -44,9 +44,9 @@ public class Util implements Serializable {
     @OneToMany(mappedBy = "utildestinataire")
     private List<Message> messagesRecus = new ArrayList<>();
     
-    @OneToOne
-    @JoinColumn(name = "NumSecu_id")
+    @OneToOne(mappedBy = "util")
     private NumSecu numsecu;
+
     
     public Long getId() {
         return id;
